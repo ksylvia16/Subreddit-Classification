@@ -16,15 +16,15 @@ Both of these subreddits define themselves as, "a place for sharing videos, gifs
 
 The following sections are supported by the respective numbered Jupyter Notebooks:
 
-[01: Data Collection & Cleaning](https://git.generalassemb.ly/ksylvia16/submissions_614/blob/master/Projects/project_3/code/01_Data_Collection%20%26%20Cleaning.ipynb)
+[01: Data Collection & Cleaning](https://github.com/ksylvia16/Subreddit-Classification/blob/6a53fbc8137e25cf36102460211f89122cde5301/code/01_Data_Collection%20%26%20Cleaning.ipynb)
 
 The data used to train and test our model sets comes from Reddit's API, which returns .json dictionaries for data requests. We iterated through to collect as many posts as permitted, and obtained from 6500 posts each from r/AnimalsBeingBros and r/AnimalsBeingJerks from the beginning of each month starting in January 2016 and ending in June 2021. These were parsed into subreddit and title content and saved to csv using a Pandas DataFrame. Data Cleaning included concatenating the dataframe, removing null values, and dropping duplicate titles. 
 
-[02: EDA & Pre-Processing](https://git.generalassemb.ly/ksylvia16/submissions_614/blob/master/Projects/project_3/code/02_EDA_%26_Pre-Processing.ipynb)
+[02: EDA & Pre-Processing](https://github.com/ksylvia16/Subreddit-Classification/blob/6a53fbc8137e25cf36102460211f89122cde5301/code/02_EDA_%26_Pre-Processing.ipynb)
 
 Initial EDA included analyzing title length distribution by word and character count in each subreddit, analyzing the top 20 words used in each subreddit, and running a Sentiment Intensity Analysis to determine the average positive, negative, and neutral polarity scores in each subreddit. Pre-processing includes tokenizing using Regex to remove punctuation and contractions, as well as stemming, lemmatizing, and vectorizing with Count Vectorizer and TF-IDF (Term Frequency-Inverse Document Frequency) to enhance modeling response. 
 
-[03: Model Selection and Evaluation](https://git.generalassemb.ly/ksylvia16/submissions_614/blob/master/Projects/project_3/code/02_EDA_%26_Pre-Processing.ipynb)
+[03: Model Selection and Evaluation](https://github.com/ksylvia16/Subreddit-Classification/blob/6a53fbc8137e25cf36102460211f89122cde5301/code/03_Model%20Selection_%26_Evaluation.ipynb)
 
 First, we divide our data into a Train and Test vector to begin modeling. Using Pipeline and GridSearchCV hyperparameter optimization, we selected 8 models to build and examine:
 - Logistic Regression
