@@ -16,7 +16,7 @@ Both of these subreddits define themselves as, "a place for sharing videos, gifs
 
 The following sections are supported by the respective numbered Jupyter Notebooks:
 
-[01: Data Collection & Cleaning](https://github.com/ksylvia16/Subreddit-Classification/blob/6a53fbc8137e25cf36102460211f89122cde5301/code/01_Data_Collection%20%26%20Cleaning.ipynb)
+[01: Data Collection & Cleaning](https://github.com/ksylvia16/Subreddit-Classification/blob/b0f6cf7ffb5ef25ab921d9bb4ac126fb3127637d/code/01_Data_Collection_%26_Cleaning.ipynb)
 
 The data used to train and test our model sets comes from Reddit's API, which returns .json dictionaries for data requests. We iterated through to collect as many posts as permitted, and obtained from 6500 posts each from r/AnimalsBeingBros and r/AnimalsBeingJerks from the beginning of each month starting in January 2016 and ending in June 2021. These were parsed into subreddit and title content and saved to csv using a Pandas DataFrame. Data Cleaning included concatenating the dataframe, removing null values, and dropping duplicate titles. 
 
